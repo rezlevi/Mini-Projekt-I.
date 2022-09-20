@@ -1,0 +1,3 @@
+Lehetséges projektek:
+  PHP - kő papír olló
+    Adatbázissal, Bejelentkeztetéssel(?), Statisztikával (W:L ratio, Best of meccsek, választások gyakorisága)

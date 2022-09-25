@@ -2,6 +2,19 @@
 
 A Xerencsejáték Zrt. a nevéből adódóan szerencsejátékokkal foglalkozik országszerte. Eddig elegendő volt, hogy papíralapúan működjenek a posta segítségével. Nagy lépés ez számukra, hogy digitalizálni akarják az egyik játékukat. A kő-papír-olló játékot. Ezzel fel lehet gyorsítani a játék folyamatát, illetve ezzel együtt a cash-flow-t. Nem mellesleg környezettudatosabb ez az üzleti stratégia.
 
+## 2. Vágyálom rendszer
+
+A cég bővülni fog, hamarosan teljesen digitálisan szeretnék folytatni eddigi munkájukat.
+
+
+## 6. Követelménylista
+- K01 Könnyen átlátható felület
+- K02 Eszközfüggetlen design
+- K03 Jogosultsági rendszer, 2 szint:
+    -1. Moderátor,
+    -2. Felhasználó
+
+
 ## X. Fogalomszótár
 
 - Design: megjelenés, stílus

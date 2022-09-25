@@ -1,5 +1,5 @@
 
-## 7. Fogalomszótár
+## X. Fogalomszótár
 
 - Design: megjelenés, stílus
 - GDPR: [General Data Protection Regulation] Általános adatvédelmi megszorítások. Fő célja a személyes adatok egységes szintű adatvédelmi biztosítása az Európai Unión belül.

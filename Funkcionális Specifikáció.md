@@ -1,5 +1,5 @@
 
 
-## 10. Fogalomszótár
+## X. Fogalomszótár
 
 - Implementálás: Megvalósítás

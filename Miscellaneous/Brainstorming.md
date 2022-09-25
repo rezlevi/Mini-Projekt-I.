@@ -28,5 +28,6 @@ Lehetséges projektek:
           Forgatókönyv
           
           
-          
+Hétfőre megbeszélni valók:
+  Admin jogosultság kell-e
            

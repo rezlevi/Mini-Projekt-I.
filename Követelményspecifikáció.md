@@ -18,9 +18,15 @@ Fontos szempont az is, hogy a felhasználó a statisztikáit bármikor egy katti
 ## 6. Követelménylista
 - K01 Könnyen átlátható felület
 - K02 Eszközfüggetlen design
-- K03 Jogosultsági rendszer, 2 szint:
-    -1. Moderátor,
-    -2. Felhasználó
+- K03 Weblap struktúrája
+    - A homepage a bejelentkező oldal.
+    - Regtisztrációs oldal
+    - Játék oldal
+    - Statisztika oldal
+- K04 Jogosultsági rendszer, 3 szint:
+    -1. Moderátor: ???
+    -2. Regisztrált felhasználó
+    -3. Vendég felhasználó
 
 
 ## X. Fogalomszótár

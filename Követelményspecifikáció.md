@@ -6,6 +6,14 @@ A Xerencsejáték Zrt. a nevéből adódóan szerencsejátékokkal foglalkozik o
 
 A cég bővülni fog, hamarosan teljesen digitálisan szeretnék folytatni eddigi munkájukat.
 
+## 3. Jelenlegi üzleti folyamatok modellje
+
+A szerencsejátékok a mai napig nagy népszerűségnek örvendenek, azonban jelenleg csak lottózókban, illetve postai úton elérhetőek az emberek számára, mely megnehezíti a játékra vágyó tömegek életét. A kő-papír-olló fogadáshoz a játékosnak papír alapú szelvényt kell kitöltenie, majd várni a heti sorsolásnál, hogy vajon nyer-e. Azonban a 21. században, a számítástechnika rohamosan fejlődő világában ez a modell szinte kiállt a változásért, hiszen drága, komplikált és lassú, nem játszható akármikor.
+
+## 4. Igényelt üzleti folyamatok modellje
+
+A cél egy olyan weboldal létrejötte, melyen az ember a már általa megszokott és jól ismert kő-papír-olló játékot játszhatja, azonban otthonról. A játék a regisztrált felhasználók számára könnyedén elérhető lesz, csupán internet hozzáférésre van szüksége hozzá.  A korábbi helyzettel ellentétben a játékos már bármikor játszhatja a játékot, amikor csak kedve van, és az eredményre sem kell napokat várnia.
+Fontos szempont az is, hogy a felhasználó a statisztikáit bármikor egy kattintással lekérheti, mely korábban egy bonyolultabb igénylési folyamathoz volt kötve.
 
 ## 6. Követelménylista
 - K01 Könnyen átlátható felület

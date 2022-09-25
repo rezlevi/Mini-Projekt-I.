@@ -29,5 +29,6 @@ Lehetséges projektek:
           
           
 Hétfőre megbeszélni valók:
-  Admin jogosultság kell-e
-           
+  Admin jogosultság kell-e (követelmény lista, forgatókönyvek) 
+  Best of 1-3-5 legyen-e (követelmény lista)
+  Kijelentkezést is megbeszélni

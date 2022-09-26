@@ -27,6 +27,10 @@ Olyan weboldalra merült fel igény, amin kő-papír-olló játékot lehet folyt
   Ha a vendégfelhasználó nem szeretne regisztrálni, akkor egyből eljuthat a játékoldalra is, azonban az ő statisztikái nem lesznek elmentve.
   A játék oldalon a kő, papír, illetve olló kiválasztása gombok segítségével törtnéik, majd a kiválasztott gomb lenyomása után a gép is véletlenszerűen választ a kő, papír és olló közül. Így zajlik egy játék. Regisztrált felhasználó eseteén minden kör után az újabb játék adataival bővül a statisztikája.
   
+  ## 5. Megfeleltetés
+  
+  
+  
   ## 6. Használati esetek 
 -Admin: korlátlan hozzáférése van minden beosztott jogosultságához, adatok törlése/módosítása, jelszavak módosítása
 

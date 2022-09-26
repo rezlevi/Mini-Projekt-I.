@@ -15,6 +15,13 @@ A szerencsejátékok a mai napig nagy népszerűségnek örvendenek, azonban jel
 A cél egy olyan weboldal létrejötte, melyen az ember a már általa megszokott és jól ismert kő-papír-olló játékot játszhatja, azonban otthonról. A játék a regisztrált felhasználók számára könnyedén elérhető lesz, csupán internet hozzáférésre van szüksége hozzá.  A korábbi helyzettel ellentétben a játékos már bármikor játszhatja a játékot, amikor csak kedve van, és az eredményre sem kell napokat várnia.
 Fontos szempont az is, hogy a felhasználó a statisztikáit bármikor egy kattintással lekérheti, mely korábban egy bonyolultabb igénylési folyamathoz volt kötve.
 
+## 5. A rendszerre vonatkozó szabályok
+- A web felület szabványos eszközökkel készüljön, html/php/css
+- A felület a lehető legkevesebb oldalból álljon
+- Egy oldalon történjen a listázás
+- Jogosultságtól függően módosítást végző nyomógombok
+- A rendszer legyen intuitív, egyértelmű
+
 ## 6. Követelménylista
 - K01 Könnyen átlátható felület
 - K02 Eszközfüggetlen design

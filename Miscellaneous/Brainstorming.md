@@ -32,3 +32,7 @@ Hétfőre megbeszélni valók:
   Admin jogosultság kell-e (követelmény lista, forgatókönyvek) 
   Best of 1-3-5 legyen-e (követelmény lista)
   Kijelentkezést is megbeszélni
+  
+  Holnap megkérdezni hogy legyen-e admin
+  Lesz best of 1-2-3
+  Kijelentkezés gomb a statisztikáknál lesz

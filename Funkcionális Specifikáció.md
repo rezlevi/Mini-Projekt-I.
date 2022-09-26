@@ -29,7 +29,8 @@ Olyan weboldalra merült fel igény, amin kő-papír-olló játékot lehet folyt
   
   ## 5. Megfeleltetés
   
-  
+  A három jogosultsági szintet implementáljuk. A kezdőoldal a bejelentkező oldal lesz, ahol az admin, illetve a már regisztrált felhasználó be tud lépni a profiljába, a vendég innen át tud jutni a játék oldalra, illetve a regisztrációs oldalra is, ahol átléphet regisztrált felhastnálói státuszba. Az admin hozzáfér minden felhasználó minden adatához, a regisztrált felhasználó csak a saját adataihoz, a vendég csak a játékhoz.
+Az egyes oldalak között gombok segítségével közlekedhetünk, figyelembe véve az aktuális felhasználó jogosultásgi szintjét.
   
   ## 6. Használati esetek 
 -Admin: korlátlan hozzáférése van minden beosztott jogosultságához, adatok törlése/módosítása, jelszavak módosítása

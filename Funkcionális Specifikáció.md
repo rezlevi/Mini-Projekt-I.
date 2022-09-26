@@ -2,6 +2,10 @@
 
 A fejlesztett rendszer célja nem más, mint az, hogy a kő-papír-olló játékot kedvelők hamarosan ne csak személyesen, hanem online formában is kipróbálhassák szerencséjüket. Ez nagyban meg fogja könnyíteni a játék emberekhez való eljutását, hiszen az otthon kényelméből egy ingyenes regisztrációt – néhány kattintást – követően már játszhatnak és nyerhetnek is. Fontos megemlíteni, hogy az online játékban – ellentétben a korábbi, személyes jelenlétet igénylő játékkal – néhány kattintással vissza is lehet nézni eddigi aktivitásunkat, statisztikáinkat. A játékot továbbá nem csak regisztrált felhasználók vehetik igénybe, hanem vendégek is, ha valaki mindenféle tét nélkül szeretné élvezni az alkalmazás nyújtotta lehetőségeket.
 
+## 3. Jelenlegi helyzet
+
+Olyan weboldalra merült fel igény, amin kő-papír-olló játékot lehet folytatni. Fontos regisztrációra ösztönözzük a felhasználókat, ezért regisztrációval elérhetők lesznek bizonyos funkciók is, mint például az adott játékos előző játszmáiról készült különböző statisztikák. Emellett viszont fontosnak tartja az ügyfél, hogy bárki számára könnyen elérhető legyen maga a játék, ezért külön regisztráció nélkül megközelíthető játékfelületet fogunk kialakítani a weboldalon.
+
 ## 3. Követelménylista
 
 - K01 Könnyen átlátható felület

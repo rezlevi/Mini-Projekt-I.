@@ -4,8 +4,7 @@ A Xerencsejáték Zrt. a nevéből adódóan szerencsejátékokkal foglalkozik o
 
 ## 2. Vágyálom rendszer
 
-A cég bővülni fog, hamarosan teljesen digitálisan szeretnék folytatni eddigi munkájukat.
-A Xerencsejáték Zrt.-nek igénye támadt arra, hogy online is jelen legyenek. Ezért azt a megbízást adták, hogy egy egyszerű játék, a kő-papír-olló online megvalósítását hajtsuk végre. Ez lenne a vállalat első lépése az online tér felé, így azt szeretnék, hogy minél elérhetőbb legyen a játék.
+AA Xerencsejáték Zrt.-nek igénye támadt arra, hogy online is jelen legyenek. Ezért azt a megbízást adták, hogy egy egyszerű játék, a kő-papír-olló online megvalósítását hajtsuk végre. Ez lenne a vállalat első lépése az online tér felé, így azt szeretnék, hogy minél elérhetőbb legyen a játék. Jövőben tovább szeretnének terjedni ebbe az irányba, ezért fontosnak tartják hogy ezzel az egyszerű játékkal felmérjék, hogy mennyi igény van az online téren a szolgáltatásaikra.
 
 ## 3. Jelenlegi üzleti folyamatok modellje
 

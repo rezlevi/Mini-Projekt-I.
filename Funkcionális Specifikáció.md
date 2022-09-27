@@ -38,7 +38,20 @@ Az egyes oldalak között gombok segítségével közlekedhetünk, figyelembe v�
 -Felhasználó:  Rendeltetésszerűen használja az oldalt, regisztrál, játszik, statisztikáját megtekintheti, kijelentkezhet, törölheti  fiókját.
 
 -Vendég: Adatrögzítés nélkül, bejelentkezés nélkül játszhat. Később tud regisztrálni is akár.
+ 
+  ## 7.  Jelenlegi üzleti folyamatok
   
-## X. Fogalomszótár
+A megbízó bevétel jelenleg a személyes szerencsejátékokból nyerik bevételüket. A megrendelést megelőző vírus időszak okozta korlátozások és bizonytalanság jelentős bevétel kiesést okozott az ügyfélnek. Az internet biztosította lehetőségeket ki szeretnék használni a bevételforrásuk bővítésére.  Valamint a számukra külső tényezőktől is függetlenedni szeretnének, ezért azzal a feladattal bíznak meg minket, hogy egy egyszerű „szerencsejáték” online megvalósítását hajtsuk végre. Ezzel is elősegítve az online szerencsejátékokra való igény felmérését.
+
+  ## 8. Igényelt üzleti folyamatok
+  
+Egyszerű, de később bővíthető „webes játék” lenne a céljuk, ami mintájára később bonyolultabb játékokat is készülhetnek. A kő-papír-olló játék nem feltétlenül lenne egyelőre egy nyereséges projekt. Egy összefoglaló pénzrendszer kialakítása még a későbbiekben lesz megvalósítva. A jövőben az is céljuk, hogy kialakuljon egy érmerendszer a játékoknak, de az első lépésekben a felhasználók számára még díj és nyereség nélkül zajlana a játékmenet. Későbbiekben a bevételt a játékosok által nyújtott nevezési díj, valamint az oldalon esetlegesen megjelenő reklámok képeznék.
+
+
+
+
+
+  
+## 9. Fogalomszótár
 
 - Implementálás: Megvalósítás

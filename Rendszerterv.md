@@ -22,3 +22,16 @@ Projektmunkások, felelősségek:
     - A web felület szabványos eszközökkel készüljön, html/php/css
     - Intuitív, átlátható rendszer
     - Autentikáció
+
+## 9. Implementációs terv
+
+A Webes felület főként HTML, CSS, és PHP nyelven fog készülni.
+Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítjük, 
+és úgy fogjuk egymáshoz csatolni a jobb átláthatóság,
+könnyebb változtathatóság, és könnyebb bővítés érdekében.
+
+
+
+
+
+

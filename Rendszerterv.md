@@ -1,7 +1,7 @@
 
 
 
-## 2. Projektterv
+## Projektterv
 Projektmunkások, felelősségek:
 - Adatbázistervezés, annak létrehozása: Réz Levente János,
 - Frontend: 
@@ -9,7 +9,7 @@ Projektmunkások, felelősségek:
 - Backend: Réz Levente János,
 - Tesztelés: 
 
-## 4. Követelmények
+## Követelmények
  - Funkcionális követelmények
     -  Felhasználók bejelentkezési adatainak tárolása
     -  Vendég felhasználó kezelése
@@ -23,7 +23,7 @@ Projektmunkások, felelősségek:
     - Intuitív, átlátható rendszer
     - Autentikáció
 
-## 9. Implementációs terv
+## Implementációs terv
 
 A Webes felület főként HTML, CSS, és PHP nyelven fog készülni.
 Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítjük, 
@@ -31,6 +31,10 @@ Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítj
 könnyebb változtathatóság, és könnyebb bővítés érdekében.
 
 
+## Telepítési terv
+A weboldal használatához szüksége lesz a felhasználónak egy böngésző használatához
+(Opera, Microsoft Edge, Google Chrome, Mozilla Firefox), 
+más egyébre nincs szüksége a felhasználónak.
 
 
 

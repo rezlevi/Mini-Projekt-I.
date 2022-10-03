@@ -53,6 +53,13 @@ A weboldal használatához szüksége lesz a felhasználónak egy böngésző ha
 (Opera, Microsoft Edge, Google Chrome, Mozilla Firefox), 
 más egyébre nincs szüksége a felhasználónak.
 
+## Tesztterv
+
+Az alkalmazás fejlesztését végigkíséri a folyamatos tesztelés, melyben mindenki részt vesz. 
+Minden egyes funkciót tesztelünk közvetlen az implementációt követően, a hibákat azonnal javítjuk.
+A fejlesztés végeztével a rendszer egészét teszteljük egyben,
+Sikertelen teszt esetén a felmerülő hibákat javítjuk, majd újra teszteljük a rendszer egészét.
+Sikeres teszt esetén a fejlesztés ezen szakasza véget ér.
 
 
 

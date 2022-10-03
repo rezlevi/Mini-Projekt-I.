@@ -38,6 +38,15 @@ Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítj
 és úgy fogjuk egymáshoz csatolni a jobb átláthatóság,
 könnyebb változtathatóság, és könnyebb bővítés érdekében.
 
+## Adatbázis terv leírása
+
+Az adatbázis két táblát kell, hogy tartalmazzon.
+A User tábla a felhasználókat tárolja.
+Mezői: Id (egész), Name (szöveg), Password (szöveg), Admin (logikai).
+A Statistics tábla a regisztrált felhasználók eredményeit tárolja.
+Mezői: Id (egész), UserId (egész), Won (egész), Lost (egész), Draw (egész), Percentage (valós).
+A Percentage mező azt tárolja, hogy az adott felhasználó milyen arányban nyeri a játékait.
+
 
 ## Telepítési terv
 A weboldal használatához szüksége lesz a felhasználónak egy böngésző használatához

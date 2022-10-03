@@ -1,6 +1,11 @@
 
 ## A rendszer célja
-A rendszer célja az, hogy a felhasználó képes legyen webes felületen kő-papír-olló játékot játszani. Fontos szempont, hogy a felhasználó a rendszert egyszerűen, gördülékenyen tudja használni, így a felület minimalista és jól átlátható kell, hogy legyen. A rendszerben három jogosultsági szintet kell megkülönböztetni, ezek az admin, a regisztrált felhasználó, illetve a vendég felhasználó szintek. Az admin képes törölni a regisztrált felhasználókat, illetve létrehozni profilokat. A regisztrált felhasználó a rendszer egészét használhatja, azaz képes játszani, illetve a profilján megtekintheti a korábbi játszmáinak eredményeit, statisztikáit. A vendég felhasználó ezzel szemben csupán játszhat, azonban a főoldalon megtalálható regisztrációs gomb megnyomása után bármikor elkészítheti saját fiókját, amellyel regisztrált felhasználóvá válhat.
+A rendszer célja az, hogy a felhasználó képes legyen webes felületen kő-papír-olló játékot játszani.
+Fontos szempont, hogy a felhasználó a rendszert egyszerűen, gördülékenyen tudja használni, így a felület minimalista és jól átlátható kell, hogy legyen.
+A rendszerben három jogosultsági szintet kell megkülönböztetni, ezek az admin, a regisztrált felhasználó, illetve a vendég felhasználó szintek. 
+Az admin képes törölni a regisztrált felhasználókat, illetve létrehozni profilokat. 
+A regisztrált felhasználó a rendszer egészét használhatja, azaz képes játszani, illetve a profilján megtekintheti a korábbi játszmáinak eredményeit, statisztikáit.
+A vendég felhasználó ezzel szemben csupán játszhat, azonban a főoldalon megtalálható regisztrációs gomb megnyomása után bármikor elkészítheti saját fiókját, amellyel regisztrált felhasználóvá válhat.
 Ezáltal lehetőséget biztosítunk arra, hogy az oldal látogatói először kipróbálhassák a játékot, majd csak ezután döntsenek felhasználói fiókjuk létrehozásáról.
 
 

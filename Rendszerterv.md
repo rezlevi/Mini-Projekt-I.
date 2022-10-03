@@ -61,5 +61,11 @@ A fejlesztés végeztével a rendszer egészét teszteljük egyben,
 Sikertelen teszt esetén a felmerülő hibákat javítjuk, majd újra teszteljük a rendszer egészét.
 Sikeres teszt esetén a fejlesztés ezen szakasza véget ér.
 
+## Karbantartási terv
+
+Az alkalmazás sikeres tesztelését követően két módon folytatódhat a munka:
+1) Új igények felmerülése esetén a programot megváltoztathatjuk, bővíthetjük.
+2) Lehetőséget biztosítunk az esetlegesen felmerülő hibák bejelentésére.
+   Bejelentett hiba esetén a hibát javítjuk, majd ismételten teszteljük a rendszert.
 
 

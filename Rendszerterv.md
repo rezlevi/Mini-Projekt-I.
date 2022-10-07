@@ -74,6 +74,16 @@ könnyebb változtathatóság, és könnyebb bővítés érdekében.
          - Felhasználó törlése --- Admin, Regisztrált felhasználó
          - Adatok módosítása --- Admin
 
+## Fizikai környezet
+   - Olyan weboldal készítése a cél, amit később az ügyfél meg tud osztani az interneten különösebb gond nélkül.
+      - A weboldalhoz sql alapú adatbázis is tartozik.
+   -Fejlesztői eszközök:
+      - Visual Studio Code
+      - MySQL WorkBench
+      - PhpMyAdmin
+      - Google Chrome
+      - XAMPP
+   
 
 ## Adatbázis terv leírása
 

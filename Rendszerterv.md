@@ -31,6 +31,9 @@ Projektmunkások, felelősségek:
     - Intuitív, átlátható rendszer
     - Autentikáció
 
+## Üzletifolyamatok modellje
+Alapvető weboldalon lehet játszani kő-papír-olló játékot. Hirdetésekből fog elsősorban származni a bevétel ezen az oldalon. Nem maga a játék nyereségességén van a hangsúly, hanem azon hogy ezzel promótálják a későbbi többi internetes szerencsejátékukat, amiken lehet valós pénzzel benevezni tétként. A megrendelőnek az a célja, hogy az tokenekből származó bevétel képezze a nyereséget elsősorban
+
 ## Implementációs terv
 
 A Webes felület főként HTML, CSS, és PHP nyelven fog készülni.

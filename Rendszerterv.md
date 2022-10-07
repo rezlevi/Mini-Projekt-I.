@@ -84,6 +84,30 @@ könnyebb változtathatóság, és könnyebb bővítés érdekében.
       - Google Chrome
       - XAMPP
    
+## Architekturális terv
+   - Alapvetően 4 különböző oldalból álló weblapot hozunk létre (játék oldal, regisztrációs oldal, bejelentkező oldal, statisztika oldal)
+      - Regisztrációs oldal: Az oldal látogatója egyszerűen regisztrálhat az oldalra, a felhasználó adatai el lesznek mentve a felhasználók SQL adatbázisba. Később a felhasználó játszmái a játékok SQL táblába lesznek mentve
+      - Bejelentkezés oldal: Regisztrált felhasználó, itt be tud jelentkezni, ha szerepelnek a felhasználóadatai a felhasználók SQL táblában
+      - Játék oldal: Egyszerű kattintással játszható. Ha a játékos be van jelentkezve, akkor elmenti a játék adatait a játékstatisztika SQL adatbázisba.
+      - Statisztika oldal: SQL adatbázishiz kötött oldal, itt az adott felhasználó a saját játszma adataihoz tud hozzáférni. Az admin felhasználó itt minden adathoz hozzáfér.
+   - 	Két SQL tábla:
+      - Felhasználók tábla: A játékosok belépési adatai lesznek ide elmentve egy id mezővel bővítve (ez a tábla elsődleges kulcsa)
+      - Játszák tábla: A felhasználó id mezőjével lesz összekötve (külsős kulcs), meccsek adatai lesznek ide elmentve (meccs kimenetele, fajtája, valamint a játékos id-je)
+   - Oldal navigáció:
+      Itt reszletezzük, hogy az adott oldalakról megyekre lehet navigálni.
+      - BEJELENTKEZÉS oldalról:
+         - REGISZTRÁCIÓ oldal
+         - JÁTÉK oldal
+      - REGISZTRÁCIÓ oldalról:
+         - JÁTÉK oldal
+         - BEJELENTKEZÉS oldal
+      - JÁTÉK oldalról:
+         - PROFILOM oldal (regisztrációs oldalra navigál, ha a felhasználó nincs bejelentkezve)
+      - PROFILOM oldalról:
+         - JÁTÉK oldal
+         - BEJELENTKEZÉS oldal (kijelentkezteti a felhasználót)
+      
+
 
 ## Adatbázis terv leírása
 

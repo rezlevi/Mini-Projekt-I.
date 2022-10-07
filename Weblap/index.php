@@ -31,7 +31,7 @@
             </tr>
             <tr>
                 <td>Jelszó:</td>
-                <td><input type="password" name="jelszo" placeholder="123AbCd" value="<?= $record[3] ?> " required/></td>
+                <td><input type="password" name="jelszo" required/></td>
             </tr>
             <tr>
                 <td><button type="submit">Módosítás</button></td>

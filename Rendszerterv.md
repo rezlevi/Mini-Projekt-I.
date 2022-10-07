@@ -38,6 +38,43 @@ Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítj
 és úgy fogjuk egymáshoz csatolni a jobb átláthatóság,
 könnyebb változtathatóság, és könnyebb bővítés érdekében.
 
+## Funkcionális terv
+   - Rendszerszereplők
+      - Nem regisztrált játékosok
+      - Regisztrált játékosok
+      - Admin
+   - Rendszerhasználati esetek és lefutásaik
+      - Admin:
+         - Teljesdatbázishoz való hozzáférés
+            - Adatbázis módosítása
+               - Meccs törlése
+               - Felhasználók törlése
+               - Felhasználók létrehozása
+            - Adatbázis szűrése
+               - Felhasználók keresése
+               - Játékok keresése
+         - Játék használata
+      - Nem regisztrált felhasználó
+         - Játék használata
+         - Regisztrálás
+      - Regisztrált felhasználó
+         - Játék használata
+         - Adatbázishoz való hozzáférés
+            - Saját statisztikák megtekintése
+         - Felhasználó kezelés
+            - Saját felhasználófiókjába való belépés
+            - Saját felhasználófiókjából való kilépés
+            - Saját felhasználófiók törlése
+   - Menü-architektúrák:
+      - Bejelentkezés: Felhasználónév, Jelszó
+      - Játék: Egérrel történik --- Admin, Regisztrált felhasználó, Nem regisztrált felhasználó
+      - Felhasználói műveletek:
+         - Statisztika lekérdezése --- Admin, Regisztrált felhasználó
+         - Felhasználó regisztrálása --- Nem regisztrált felhasználó
+         - Felhasználó törlése --- Admin, Regisztrált felhasználó
+         - Adatok módosítása --- Admin
+
+
 ## Adatbázis terv leírása
 
 Az adatbázis két táblát kell, hogy tartalmazzon.

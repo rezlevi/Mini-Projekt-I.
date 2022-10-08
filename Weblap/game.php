@@ -26,7 +26,7 @@ if(isset($_POST["jatekmod_gomb"])){
     <title>Document</title>
 </head>
 <body>
-<form action="gamemode2.php" method="post">
+<form action="game2.php" method="post">
 
         <tr>
             <td>

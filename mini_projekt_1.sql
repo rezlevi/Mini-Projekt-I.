@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `statistics` (
   `id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
-  `all` int(11) NOT NULL,
+  `alls` int(11) NOT NULL,
   `won` int(11) NOT NULL,
   `lost` int(11) NOT NULL,
   `draw` int(11) NOT NULL,

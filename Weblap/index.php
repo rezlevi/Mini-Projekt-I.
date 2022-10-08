@@ -42,6 +42,26 @@
 
     <?php echo "<br>"?>
 
+        <h3>Itt láthatod az eddigi játékaid statisztikáit:</h3>
+        <table>
+            <tr>
+                <th>Összes</th>
+                <th>Nyert</th>
+                <th>Vesztett</th>
+                <th>Döntetlen</th>
+                <th>Győzelmi százalék</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+    <?php echo "<br>"?>
+
     <form action="logout.php" method = "POST">
         <input type="hidden" name="id"/>
         <button type="submit">Kijelentkezés</button>

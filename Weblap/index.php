@@ -16,6 +16,10 @@
         $query = "SELECT * FROM users WHERE id=".$_SESSION['id'];
         $results=mysqli_query($con, $query) or die ("Nem sikerült ".$query);
         $record=mysqli_fetch_row($results);
+
+        $query2 = "SELECT * FROM statistics WHERE user_id=".$_SESSION['id'];
+        $results2=mysqli_query($con, $query2) or die ("Nem sikerült ".$query);
+        $record2=mysqli_fetch_row($results2);
     ?>
     <h1>Profilom</h1>
     <h3>Itt láthatod a megadott adataidat, illetve módositani tudod az adataidat, ha szükséges.</h3>
@@ -52,11 +56,11 @@
                 <th>Győzelmi százalék</th>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td><?= $record2[2] ?></td>
+                <td><?= $record2[3] ?></td>
+                <td><?= $record2[4] ?></td>
+                <td><?= $record2[5] ?></td>
+                <td><?= $record2[6] ?></td>
             </tr>
         </table>
 

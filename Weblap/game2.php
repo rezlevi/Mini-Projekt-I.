@@ -52,7 +52,7 @@ if(($_SESSION['jelenlegivalasztas']-$a) % 3 == 2) {
     <title>Document</title>
 </head>
 <body>
-<form action="jatek2.php" method="post">
+<form action="game2.php" method="post">
 
 <tr>
     <td>

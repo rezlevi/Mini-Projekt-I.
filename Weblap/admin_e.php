@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin panel</title>
+    <title></title>
 </head>
 <body>
     
@@ -31,11 +31,12 @@
     
     if($admin == 1)
     {
-        header('Location: login_form.php');
+        header('Location: admin_panel.php');
     }
     elseif($admin == 0)
     {
-        "Nem vagy admin!";
+        echo "Nem vagy admin!";
+        echo "<br>";
         echo "<a href='index.php'>Vissza a főoldalra!</a>";
     }
     

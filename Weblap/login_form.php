@@ -6,9 +6,6 @@
     <link rel="stylesheet" href="design.css">
 </head>
 <body>
-<form align="right" action="gamemode_select.php">
-    <input type="submit" value="Játék vendégként" />
-    </form>
     <form action="login.php" method="POST">
         <table align="center">
             <tr>
@@ -25,6 +22,11 @@
             </tr>
         </table>
     </form>
+    <?php echo "<br>"?>
+    <form align="center" action="gamemode_select.php">
+    <input type="submit" value="Játék vendégként" />
+    </form>
+    <?php echo "<br>"?>
     <form align="center" action="register_form.php">
     <input type="submit" value="Regisztráció" />
     </form>

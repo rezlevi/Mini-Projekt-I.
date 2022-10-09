@@ -129,7 +129,7 @@ elseif($_SESSION['botpontja'] == $_SESSION['maxpont']){
     <link rel="stylesheet" href="design.css">
 </head>
 <body>
-<form align="right" action="index.php">
+<form align="center" action="index.php">
     <input type="submit" value="Vissza" />
     </form>
     <table align="center">
@@ -187,6 +187,10 @@ elseif($_SESSION['botpontja'] == $_SESSION['maxpont']){
 
     </tr>
 </table>
+
+<form align="center" action="index.php">
+    <input type="submit" value="Vissza" />
+    </form>
 
 </body>
 </html>

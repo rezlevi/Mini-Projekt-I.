@@ -12,9 +12,6 @@
             session_start();
             $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
     ?>
-    <form action="index.php" align="right">
-    <input type="submit" value="Vissza" />
-    </form>
     <?php
         if(strpos($fullUrl, "nyert") == true || strpos($fullUrl, "vesztett") == true){
             echo('<p align="center">Új játék?</p>');
@@ -32,6 +29,11 @@
         ?>
         <input type="submit" value="Választ" name="jatekmod_gomb">
     </form>
+    <?php echo "<br>"?>
+    <form action="index.php" align="center">
+    <input type="submit" value="Vissza" />
+    </form>
+    <div align="center">
     <?php
                     if(strpos($fullUrl, "nyert") == true){
                         echo('<br>');
@@ -63,7 +65,7 @@
                         
                     }
     ?>
-
+<div>
 
 </body>
 </html>

@@ -22,10 +22,7 @@
         $results2=mysqli_query($con, $query2) or die ("Nem sikerült ".$query);
         $record2=mysqli_fetch_row($results2);
     ?>
-                    <form align="right" action="logout.php" method = "POST">
-                    <input type="hidden" name="id"/>
-                    <button type="submit">Kijelentkezés</button>
-                </form>
+                    
     <h1 align="center">Profilom</h1>
     <h3 align="center">Itt láthatod a megadott adataidat, illetve módositani tudod az adataidat, ha szükséges.</h3>
     <form action="update.php" method="POST">
@@ -62,7 +59,7 @@
 
     <?php echo "<br>"?>
 
-<h3align = "center">Itt láthatod az eddigi játékaid statisztikáit:</h3>
+<h3 align = "center">Itt láthatod az eddigi játékaid statisztikáit:</h3>
 <table align = "center"  style="background-color: white; border: 1px solid;">
     <tr>
         <th class="t">Összes</th>
@@ -79,10 +76,17 @@
         <td class="t"><?= $record2[6] ?></td>
     </tr>
 </table>
-    
-<form align = "center" action="gamemode_select.php">
+    <?php echo "<br>"?>
+    <form align = "center" action="gamemode_select.php">
     <input type="submit" value="Irány játszani" />
 </form>
+<?php echo "<br>"?>
+    <form align="center" action="logout.php" method = "POST">
+                    <input type="hidden" name="id"/>
+                    <button type="submit">Kijelentkezés</button>
+                </form>
+                
+
     
 </body>
 </html>

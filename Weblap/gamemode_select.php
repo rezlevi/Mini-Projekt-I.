@@ -11,6 +11,8 @@
             session_start();
             $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
             if(strpos($fullUrl, "nyert") == true){
+                echo("Előző meccsed eredményei:");
+                echo('<br>');
                 echo("Megnyerted a meccset!");
                 echo('<br>');
                 echo("Végleges pontjaid:"); 
@@ -18,8 +20,12 @@
                 echo('<br>');
                 echo("Ellenfeled végleges pontjai:");
                 echo($_SESSION['botpontja']);
+                echo('<br>');
+                echo("Új játék?");
             }
             else if(strpos($fullUrl, "vesztett") == true){
+                echo("Előző meccsed eredményei:");
+                echo('<br>');
                 echo("Elvesztetted a meccset!");
                 echo('<br>');
                 echo("Végleges pontjaid:"); 
@@ -27,6 +33,8 @@
                 echo('<br>');
                 echo("Ellenfeled végleges pontjai:");
                 echo($_SESSION['botpontja']);
+                echo('<br>');
+                echo("Új játék?");
                 
             }
     ?>

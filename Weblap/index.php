@@ -61,7 +61,7 @@
             </td>
             <td>
                 </form>
-                    <form action="admin_panel.php" method="POST">
+                    <form action="admin_e.php" method="POST">
                     <input type="hidden" name="admine" value=""/> 
                     <button type="submit">Adminpanel megnyitása</button>
                 </form>

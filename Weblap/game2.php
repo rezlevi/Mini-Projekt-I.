@@ -60,7 +60,7 @@ if(($b-$a)== 0) {
     $_SESSION['dontetlen']++;
     $alls++;
     $draw++;
-    $percentage = $won/$alls;
+    $percentage = round(($won/$alls)*100,2);
     $query1 = "UPDATE statistics SET alls =$alls";
     $query2 = "UPDATE statistics SET draw =$draw";
     $query3 = "UPDATE statistics SET percentage =$percentage";
@@ -73,7 +73,7 @@ if(($b == 1 && $a == 3) || ($b == 2 && $a == 1)  || ($b == 3 && $a == 2) ) {
     $_SESSION['jatekospontja']++;
     $alls++;
     $won++;
-    $percentage = $won/$alls;
+    $percentage = round(($won/$alls)*100,2);
     $query1 = "UPDATE statistics SET alls =$alls";
     $query2 = "UPDATE statistics SET won =$won";
     $query3 = "UPDATE statistics SET percentage =$percentage";
@@ -86,7 +86,7 @@ if(($a == 1 && $b == 3) || ($a == 2 && $b == 1)  || ($a == 3 && $b == 2) ) {
     $_SESSION['botpontja']++;
     $alls++;
     $lost++;
-    $percentage = $won/$alls;
+    $percentage = round(($won/$alls)*100,2);
     $query1 = "UPDATE statistics SET alls =$alls";
     $query2 = "UPDATE statistics SET lost =$lost";
     $query3 = "UPDATE statistics SET percentage =$percentage";

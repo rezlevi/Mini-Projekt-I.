@@ -88,8 +88,6 @@ if(($a == 1 && $b == 3) || ($a == 2 && $b == 1)  || ($a == 3 && $b == 2) ) {
 </form>
     <table>
         <a>Legutóbbi választásod: <?php
-        echo($_SESSION['maxpont']);
-        echo("/");
         echo($valasztas_jatekos) ?></a>
         <br>
         <a>Ellenfeled legutóbbi választása: <?php

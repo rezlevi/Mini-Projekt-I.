@@ -128,61 +128,64 @@ elseif($_SESSION['botpontja'] == $_SESSION['maxpont']){
     <title>Document</title>
 </head>
 <body>
-<form action="game2.php" method="post">
+<form align="right" action="index.php">
+    <input type="submit" value="Vissza" />
+    </form>
+    <table align="center">
+        <p align="center">Legutóbbi választásod: <?php
+        echo($valasztas_jatekos) ?></p>
 
-<tr>
-    <td>
-        <input type="submit" name="ko_valaszt" value="ko">
-    </td>
-    <td>
-        <input type="submit" name="papir_valaszt" value="papir">
-    </td>
-    <td>
-        <input type="submit" name="ollo_valaszt" value="ollo">
-    </td>
-</tr>
-</form>
-    <table>
-        <a>Legutóbbi választásod: <?php
-        echo($valasztas_jatekos) ?></a>
+        <p align="center">Ellenfeled legutóbbi választása: <?php
+        echo($valasztas_bot)?></p>
+
+        <p align="center">Kör kimenetele: <?php echo($eredmeny)?></p>
         <br>
-        <a>Ellenfeled legutóbbi választása: <?php
-        echo($valasztas_bot)?></a>
-        <br>
-        <a>Kör kimenetele: <?php echo($eredmeny)?></a>
 
     </table>
     
 
-<table>
+
+
+<form align="center" action="game2.php" method="post">
     <tr>
         <td>
-            <a>Jelenlegi pontjaid: <?php 
-                echo($_SESSION['maxpont']);
-                echo("/");
-                echo($_SESSION['jatekospontja']);?></a>
-            <br>
-            <a><?php ?></a>
+            <input type="submit" name="ko_valaszt" value="kő">
         </td>
         <td>
-            <a>Ellenfeled pontjai: <?php
-                echo($_SESSION['maxpont']);
-                echo("/");
-                echo($_SESSION['botpontja']);?></a>
-            <br>
-            <a><?php ?></a>
+            <input type="submit" name="papir_valaszt" value="papír">
         </td>
         <td>
-            <a>Döntetlenek: <?php
-                echo($_SESSION['dontetlen']);
-            ?>
+            <input type="submit" name="ollo_valaszt" value="olló">
         </td>
     </tr>
-</table>
+</form>
 
-<form action="index.php">
-    <input type="submit" value="Vissza" />
-    </form>
+<table align="center" height:40vh; width:100vw>
+    <tr>
+        <td>
+            <p>Jelenlegi pontjaid: 
+                <br><?php 
+                echo($_SESSION['maxpont']);
+                echo("/");
+                echo($_SESSION['jatekospontja']);?><p>
+        </td>
+        <td>
+            <p>Döntetlenek:
+                <br>
+                 <?php
+                echo($_SESSION['dontetlen']);
+            ?><p>
+        </td>
+        <td>
+            <p>Ellenfeled pontjai:
+                <br> <?php
+                echo($_SESSION['maxpont']);
+                echo("/");
+                echo($_SESSION['botpontja']);?></p>
+        </td>
+
+    </tr>
+</table>
 
 </body>
 </html>

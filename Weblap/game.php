@@ -29,7 +29,10 @@ if(isset($_POST["jatekmod_gomb"])){
     <title>Document</title>
 </head>
 <body>
-<form action="game2.php" method="post">
+<form align="right" action="index.php">
+    <input type="submit" value="Vissza" />
+    </form>
+<form align="center" action="game2.php" method="post">
 
         <tr>
             <td>
@@ -44,9 +47,7 @@ if(isset($_POST["jatekmod_gomb"])){
         </tr>
 </form>
 
-<form action="index.php">
-    <input type="submit" value="Vissza" />
-    </form>
+
 
 </body>
 </html>

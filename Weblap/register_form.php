@@ -6,8 +6,11 @@
 
 </head>
 <body>
+    <form action="index.php" align="right">
+        <input type="submit" value="Vissza" />
+    </form>
     <form action="register.php" method="POST" >
-        <table>
+        <table align="center">
             <tr>
                 <td>Username:</td>
                 <td><input type="text" name="username" placeholder="username" required /></td>

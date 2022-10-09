@@ -21,10 +21,14 @@
         $results2=mysqli_query($con, $query2) or die ("Nem sikerült ".$query);
         $record2=mysqli_fetch_row($results2);
     ?>
-    <h1>Profilom</h1>
-    <h3>Itt láthatod a megadott adataidat, illetve módositani tudod az adataidat, ha szükséges.</h3>
+                    <form align="right" action="logout.php" method = "POST">
+                    <input type="hidden" name="id"/>
+                    <button type="submit">Kijelentkezés</button>
+                </form>
+    <h1 align="center">Profilom</h1>
+    <h3 align="center">Itt láthatod a megadott adataidat, illetve módositani tudod az adataidat, ha szükséges.</h3>
     <form action="update.php" method="POST">
-        <table>
+        <table align = "center">
             <tr>
                 <td>Username</td>
                 <td><input type="text" name="username" placeholder="Username" value="<?= $record[1] ?> " required/></td>
@@ -41,23 +45,22 @@
                 <td><button type="submit">Módosítás</button></td>
                 <td><button type="reset">Adatok visszaállítása</button></td>
             </tr>
+            <tr>
+                <td>
+                    </form>
+                        <form action="delete_profil.php" method="POST">
+                        <input type="hidden" name="id" value=""/> 
+                        <button type="submit">Profil Törlése</button>
+                    </form>
+                </td>
+            </tr>
         </table>
     </form>
 
-    <table>
+    <table align = "center">
         <tr>
             <td>
-                <form action="logout.php" method = "POST">
-                    <input type="hidden" name="id"/>
-                    <button type="submit">Kijelentkezés</button>
-                </form>
-            </td>
-            <td>
-                </form>
-                    <form action="delete_profil.php" method="POST">
-                    <input type="hidden" name="id" value=""/> 
-                    <button type="submit">Profil Törlése</button>
-                </form>
+
             </td>
         </tr>
     </table>
@@ -67,8 +70,8 @@
 
     <?php echo "<br>"?>
 
-<h3>Itt láthatod az eddigi játékaid statisztikáit:</h3>
-<table>
+<h3 align = "center">Itt láthatod az eddigi játékaid statisztikáit:</h3>
+<table align = "center">
     <tr>
         <th>Összes</th>
         <th>Nyert</th>
@@ -85,7 +88,7 @@
     </tr>
 </table>
     
-<form action="gamemode_select.php">
+<form align = "center" action="gamemode_select.php">
     <input type="submit" value="Irány játszani" />
 </form>
     

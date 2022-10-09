@@ -10,35 +10,16 @@
     <?php
             session_start();
             $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-            if(strpos($fullUrl, "nyert") == true){
-                echo("Előző meccsed eredményei:");
-                echo('<br>');
-                echo("Megnyerted a meccset!");
-                echo('<br>');
-                echo("Végleges pontjaid:"); 
-                echo($_SESSION['jatekospontja']);
-                echo('<br>');
-                echo("Ellenfeled végleges pontjai:");
-                echo($_SESSION['botpontja']);
-                echo('<br>');
-                echo("Új játék?");
-            }
-            else if(strpos($fullUrl, "vesztett") == true){
-                echo("Előző meccsed eredményei:");
-                echo('<br>');
-                echo("Elvesztetted a meccset!");
-                echo('<br>');
-                echo("Végleges pontjaid:"); 
-                echo($_SESSION['jatekospontja']);
-                echo('<br>');
-                echo("Ellenfeled végleges pontjai:");
-                echo($_SESSION['botpontja']);
-                echo('<br>');
-                echo("Új játék?");
-                
-            }
     ?>
-    <form method="POST" action="game.php">
+    <form action="index.php" align="right">
+    <input type="submit" value="Vissza" />
+    </form>
+    <?php
+        if(strpos($fullUrl, "nyert") == true || strpos($fullUrl, "vesztett") == true){
+            echo('<p align="center">Új játék?</p>');
+        }
+    ?>
+    <form align="center" method="POST" action="game.php">
         <label for="jatekmod">Válassz játékmódot:</label>
         <select id="jatekmod" name="jatekmod" size="1">
             <option value="Bo1">Best of 1</option>
@@ -47,14 +28,41 @@
         </select>
         <?php
         $_SESSION['jelenlegi_jatek'] = 0;
-        
         ?>
         <input type="submit" value="Választ" name="jatekmod_gomb">
     </form>
+    <?php
+                    if(strpos($fullUrl, "nyert") == true){
+                        echo('<br>');
+                        echo("Előző meccsed eredményei:");
+                        echo('<br>');
+                        echo('<br>');
+                        echo("Megnyerted a meccset!");
+                        echo('<br>');
+                        echo("Végleges pontjaid:"); 
+                        echo($_SESSION['jatekospontja']);
+                        echo('<br>');
+                        echo("Ellenfeled végleges pontjai:");
+                        echo($_SESSION['botpontja']);
+                        echo('<br>');
+                    }
+                    else if(strpos($fullUrl, "vesztett") == true){
+                        echo('<br>');
+                        echo("Előző meccsed eredményei:");
+                        echo('<br>');
+                        echo('<br>');
+                        echo("Elvesztetted a meccset!");
+                        echo('<br>');
+                        echo("Végleges pontjaid:"); 
+                        echo($_SESSION['jatekospontja']);
+                        echo('<br>');
+                        echo("Ellenfeled végleges pontjai:");
+                        echo($_SESSION['botpontja']);
+                        echo('<br>');
+                        
+                    }
+    ?>
 
-    <form action="index.php">
-    <input type="submit" value="Vissza" />
-    </form>
 
 </body>
 </html>

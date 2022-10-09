@@ -57,13 +57,6 @@
         </table>
     </form>
 
-    <table align = "center">
-        <tr>
-            <td>
-
-            </td>
-        </tr>
-    </table>
 
 
 

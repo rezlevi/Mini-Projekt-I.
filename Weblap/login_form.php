@@ -21,6 +21,11 @@
             </tr>
         </table>
     </form>
-    <a href="register_form.php">Regisztráció</a>
+    <form action="register_form.php">
+    <input type="submit" value="Regisztráció" />
+    </form>
+    <form action="gamemode_select.php">
+    <input type="submit" value="Játék vendégként" />
+    </form>
 </body>
 </html>

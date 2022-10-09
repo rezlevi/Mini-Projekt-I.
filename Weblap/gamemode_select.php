@@ -53,7 +53,7 @@
     </form>
 
     <form action="index.php">
-    <input type="submit" value="Vissza a profilomra" />
+    <input type="submit" value="Vissza" />
     </form>
 
 </body>

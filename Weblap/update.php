@@ -10,10 +10,21 @@
     $jelszo = md5($_POST['jelszo']);
     $id = $_SESSION['id'];
 
-    $query = "UPDATE users SET profilkep = username='$username',
-     email='$email', jelszo='$jelszo' WHERE id=$id";
-    $result = mysqli_query($con, $query);
+    $query2 = "SELECT * FROM users WHERE username='$username' AND id<>$id ";
+    $result2 = mysqli_query($con, $query2);
+    $record = mysqli_fetch_all($result2);
+    
+    if($record == null)
+    {
+        $query = "UPDATE users SET username='$username',
+        email='$email', jelszo='$jelszo' WHERE id=$id";
+        $result = mysqli_query($con, $query);
 
-    header('Location: sajat_profil.php');
-    echo "<a href='login_form.php'>Vissza a bejelentkezéshez</a>";
+        header('Location: updated.php');
+    }
+    else
+    {
+        echo "A felhasználónév már foglalt!";
+        echo "<a href='register_form.php'>Vissza a regisztrációhoz</a>";
+    }
 ?>

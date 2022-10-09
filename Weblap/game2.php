@@ -179,5 +179,8 @@ elseif($_SESSION['botpontja'] == $_SESSION['maxpont']){
     </tr>
 </table>
 
+<input type="submit" name="index" value="Vissza a főoldalra!">
+
+
 </body>
 </html>

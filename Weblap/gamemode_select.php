@@ -52,6 +52,9 @@
         <input type="submit" value="Választ" name="jatekmod_gomb">
     </form>
 
+    <form action="index.php">
+    <input type="submit" value="Vissza a profilomra" />
+    </form>
 
 </body>
 </html>

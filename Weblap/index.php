@@ -46,26 +46,6 @@
 
     <?php echo "<br>"?>
 
-        <h3>Itt láthatod az eddigi játékaid statisztikáit:</h3>
-        <table>
-            <tr>
-                <th>Összes</th>
-                <th>Nyert</th>
-                <th>Vesztett</th>
-                <th>Döntetlen</th>
-                <th>Győzelmi százalék</th>
-            </tr>
-            <tr>
-                <td><?= $record2[2] ?></td>
-                <td><?= $record2[3] ?></td>
-                <td><?= $record2[4] ?></td>
-                <td><?= $record2[5] ?></td>
-                <td><?= $record2[6] ?></td>
-            </tr>
-        </table>
-
-    <?php echo "<br>"?>
-
     <form action="logout.php" method = "POST">
         <input type="hidden" name="id"/>
         <button type="submit">Kijelentkezés</button>
@@ -80,9 +60,29 @@
         <button type="submit">Törlés</button>
     </form>
 
+    <?php echo "<br>"?>
 
+<h3>Itt láthatod az eddigi játékaid statisztikáit:</h3>
+<table>
+    <tr>
+        <th>Összes</th>
+        <th>Nyert</th>
+        <th>Vesztett</th>
+        <th>Döntetlen</th>
+        <th>Győzelmi százalék</th>
+    </tr>
+    <tr>
+        <td><?= $record2[2] ?></td>
+        <td><?= $record2[3] ?></td>
+        <td><?= $record2[4] ?></td>
+        <td><?= $record2[5] ?></td>
+        <td><?= $record2[6] ?></td>
+    </tr>
+</table>
     
-
+<form action="gamemode_select.php">
+    <input type="submit" value="Irány játszani" />
+</form>
     
 </body>
 </html>

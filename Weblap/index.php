@@ -59,6 +59,13 @@
                     <button type="submit">Profil Törlése</button>
                 </form>
             </td>
+            <td>
+                </form>
+                    <form action="admin_panel.php" method="POST">
+                    <input type="hidden" name="admine" value=""/> 
+                    <button type="submit">Adminpanel megnyitása</button>
+                </form>
+            </td>
         </tr>
     </table>
 

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Bejelentkezés</title>
+    <link rel="stylesheet" href="design.css">
 </head>
 <body>
     <form action="login.php" method="POST">

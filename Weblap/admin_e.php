@@ -14,6 +14,8 @@
 
 
 <?php
+    $admin = 0;
+
     session_start();
     if(!isset($_SESSION['id']))
     {
@@ -22,23 +24,19 @@
     require 'mydbms.php';
     $query = "SELECT * FROM users WHERE id=".$_SESSION['id'];
     $results=mysqli_query($con, $query) or die ("Nem sikerült ".$query);
-    $record=mysqli_fetch_row($results)
-
+    $record=mysqli_fetch_row($results);
     
+    //var_dump($record[4]);
+    $admin = $record[4];
     
-?>
-<?php
-var_dump($record);
-
-$int = (int)$record;
-
-if ($int = 1)
-{
-    echo "Admin vagy!";
-}
-else
-{
-    echo "Nope";
-}
-
+    if($admin == 1)
+    {
+        header('Location: login_form.php');
+    }
+    elseif($admin == 0)
+    {
+        "Nem vagy admin!";
+        echo "<a href='index.php'>Vissza a főoldalra!</a>";
+    }
+    
 ?>

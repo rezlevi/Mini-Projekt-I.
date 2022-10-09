@@ -4,8 +4,7 @@ session_start();
 $a = rand(1,3);
 $b;
 
-$jatekos_pontja = 0;
-$bot_pontja = 0;
+
 
 if(isset($_POST['ko_valaszt'])){
     $b = 1;
@@ -50,14 +49,15 @@ if($a == 3){
 $eredmeny = null;
 if(($b-$a)== 0) {
     $eredmeny = "Döntetlen!";
+    $_SESSION['dontetlen']++;
 }
 if(($b == 1 && $a == 3) || ($b == 2 && $a == 1)  || ($b == 3 && $a == 2) ) {
     $eredmeny = "A játékos nyert!";
-    $jatekos_pontja++;
+    $_SESSION['jatekospontja']++;
 }
 if(($a == 1 && $b == 3) || ($a == 2 && $b == 1)  || ($a == 3 && $b == 2) ) {
     $eredmeny = "A gép nyert!";
-    $bot_pontja++;
+    $_SESSION['botpontja']++;
 }
 
 
@@ -87,9 +87,13 @@ if(($a == 1 && $b == 3) || ($a == 2 && $b == 1)  || ($a == 3 && $b == 2) ) {
 </tr>
 </form>
     <table>
-        <a>Legutóbbi választásod: <?php echo($valasztas_jatekos) ?></a>
+        <a>Legutóbbi választásod: <?php
+        echo($_SESSION['maxpont']);
+        echo("/");
+        echo($valasztas_jatekos) ?></a>
         <br>
-        <a>Ellenfeled legutóbbi választása: <?php echo($valasztas_bot)?></a>
+        <a>Ellenfeled legutóbbi választása: <?php
+        echo($valasztas_bot)?></a>
         <br>
         <a>Kör kimenetele: <?php echo($eredmeny)?></a>
 
@@ -98,14 +102,25 @@ if(($a == 1 && $b == 3) || ($a == 2 && $b == 1)  || ($a == 3 && $b == 2) ) {
 <table>
     <tr>
         <td>
-        <a>Jelenlegi pontjaid: <?= $jatekos_pontja?></a>
-        <br>
-        <a><?php ?></a>
-        </td>
-        <td>
-            <a>Ellenfeled pontjai: <?=$bot_pontja?></a>
+            <a>Jelenlegi pontjaid: <?php 
+                echo($_SESSION['maxpont']);
+                echo("/");
+                echo($_SESSION['jatekospontja']);?></a>
             <br>
             <a><?php ?></a>
+        </td>
+        <td>
+            <a>Ellenfeled pontjai: <?php
+                echo($_SESSION['maxpont']);
+                echo("/");
+                echo($_SESSION['botpontja']);?></a>
+            <br>
+            <a><?php ?></a>
+        </td>
+        <td>
+            <a>Döntetlenek: <?php
+                echo($_SESSION['dontetlen']);
+            ?>
         </td>
     </tr>
 </table>

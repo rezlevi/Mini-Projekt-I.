@@ -15,6 +15,9 @@ if(isset($_POST["jatekmod_gomb"])){
         $_SESSION['maxpont'] = 3;
     }
     $_SESSION['jelenlegivalasztas'] = 0;
+    $_SESSION['jatekospontja'] = 0;
+    $_SESSION['botpontja'] = 0;
+    $_SESSION['dontetlen'] = 0;
 }
 ?>
 <!DOCTYPE html>

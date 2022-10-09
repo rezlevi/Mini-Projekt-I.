@@ -39,21 +39,6 @@ if(isset($_POST["jatekmod_gomb"])){
                 <input type="submit" name="ollo_valaszt" value="ollo">
             </td>
         </tr>
-        <?php
-        if(isset($_POST['ko_valaszt'])){
-            $_SESSION['jelenlegi_valasztas'] = 3;
-            $_SESSION['jelenlegi_jatek']++;
-        }
-        else if(isset($_POST['papir_valaszt'])){
-            $_SESSION['jelenlegi_valasztas'] = 2;
-            $_SESSION['jelenlegi_jatek']++;
-         
-        }
-        else if(isset($_POST['ollo_valaszt'])){
-            $_SESSION['jelenlegi_valasztas'] = 1;
-            $_SESSION['jelenlegi_jatek']++;
-        }
-    ?>
 </form>
 
 </body>

@@ -2,16 +2,34 @@
 // jelenlegi_valasztas: 3==ko ==papir 3==ollo
 session_start();
 $a = rand(1,3);
+$b;
+
+$jatekos_pontja = 0;
+$bot_pontja = 0;
+
+if(isset($_POST['ko_valaszt'])){
+    $b = 1;
+    $_SESSION['jelenlegi_jatek']++;
+}
+else if(isset($_POST['papir_valaszt'])){
+    $b = 2;
+    $_SESSION['jelenlegi_jatek']++;
+ 
+}
+else if(isset($_POST['ollo_valaszt'])){
+    $b = 3;
+    $_SESSION['jelenlegi_jatek']++;
+}
 
 
 $valasztas_jatekos = "";
-if($_SESSION['jelenlegivalasztas'] == 1){
+if($b == 1){
     $valasztas_jatekos ="kő";
 }
-elseif($_SESSION['jelenlegivalasztas'] == 2){
+elseif($b == 2){
     $valasztas_jatekos ="papír";
 }
-elseif($_SESSION['jelenlegivalasztas'] == 3){
+elseif($b == 3){
     $valasztas_jatekos ="olló";
 }
 
@@ -19,25 +37,27 @@ elseif($_SESSION['jelenlegivalasztas'] == 3){
 $valasztas_bot = "";
 
 if($a == 1){
-    $valasztas_bot = "olló";
+    $valasztas_bot = "kő";
 }
 if($a == 2){
     $valasztas_bot = "papír";
 }
 if($a == 3){
-    $valasztas_bot = "kő";
+    $valasztas_bot = "olló";
 }
 
 
 $eredmeny = null;
-if(($_SESSION['jelenlegivalasztas']-$a) % 3 == 0) {
-    $eredmeny = 1;
+if(($b-$a)== 0) {
+    $eredmeny = "Döntetlen!";
 }
-if(($_SESSION['jelenlegivalasztas']-$a) % 3 == 1) {
-    $eredmeny = 2;
+if(($b == 1 && $a == 3) || ($b == 2 && $a == 1)  || ($b == 3 && $a == 2) ) {
+    $eredmeny = "A játékos nyert!";
+    $jatekos_pontja++;
 }
-if(($_SESSION['jelenlegivalasztas']-$a) % 3 == 2) {
-    $eredmeny = 3;
+if(($a == 1 && $b == 3) || ($a == 2 && $b == 1)  || ($a == 3 && $b == 2) ) {
+    $eredmeny = "A gép nyert!";
+    $bot_pontja++;
 }
 
 
@@ -65,21 +85,6 @@ if(($_SESSION['jelenlegivalasztas']-$a) % 3 == 2) {
         <input type="submit" name="ollo_valaszt" value="ollo">
     </td>
 </tr>
-<?php
-if(isset($_POST['ko_valaszt'])){
-    $_SESSION['jelenlegivalasztas'] = 1;
-    $_SESSION['jelenlegi_jatek']++;
-}
-else if(isset($_POST['papir_valaszt'])){
-    $_SESSION['jelenlegivalasztas'] = 2;
-    $_SESSION['jelenlegi_jatek']++;
- 
-}
-else if(isset($_POST['ollo_valaszt'])){
-    $_SESSION['jelenlegivalasztas'] = 3;
-    $_SESSION['jelenlegi_jatek']++;
-}
-?>
 </form>
     <table>
         <a>Legutóbbi választásod: <?php echo($valasztas_jatekos) ?></a>
@@ -93,12 +98,12 @@ else if(isset($_POST['ollo_valaszt'])){
 <table>
     <tr>
         <td>
-        <a>Jelenlegi pontjaid:</a>
+        <a>Jelenlegi pontjaid: <?= $jatekos_pontja?></a>
         <br>
         <a><?php ?></a>
         </td>
         <td>
-            <a>Ellenfeled pontjai:</a>
+            <a>Ellenfeled pontjai: <?=$bot_pontja?></a>
             <br>
             <a><?php ?></a>
         </td>

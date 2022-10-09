@@ -7,6 +7,29 @@
     <title>Document</title>
 </head>
 <body>
+    <?php
+            session_start();
+            $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+            if(strpos($fullUrl, "nyert") == true){
+                echo("Megnyerted a meccset!");
+                echo('<br>');
+                echo("Végleges pontjaid:"); 
+                echo($_SESSION['jatekospontja']);
+                echo('<br>');
+                echo("Ellenfeled végleges pontjai:");
+                echo($_SESSION['botpontja']);
+            }
+            else if(strpos($fullUrl, "vesztett") == true){
+                echo("Elvesztetted a meccset!");
+                echo('<br>');
+                echo("Végleges pontjaid:"); 
+                echo($_SESSION['jatekospontja']);
+                echo('<br>');
+                echo("Ellenfeled végleges pontjai:");
+                echo($_SESSION['botpontja']);
+                
+            }
+    ?>
     <form method="POST" action="game.php">
         <label for="jatekmod">Válassz játékmódot:</label>
         <select id="jatekmod" name="jatekmod" size="1">
@@ -15,14 +38,12 @@
             <option value="Bo5">Best of 5</option>
         </select>
         <?php
-        session_start();
         $_SESSION['jelenlegi_jatek'] = 0;
         
         ?>
         <input type="submit" value="Választ" name="jatekmod_gomb">
-
-
     </form>
+
 
 </body>
 </html>

@@ -3,7 +3,7 @@
 session_start();
 $a = rand(1,3);
 $b;
-
+$maxpont = -1;
 
 
 if(isset($_POST['ko_valaszt'])){
@@ -59,7 +59,13 @@ if(($a == 1 && $b == 3) || ($a == 2 && $b == 1)  || ($a == 3 && $b == 2) ) {
     $eredmeny = "A gép nyert!";
     $_SESSION['botpontja']++;
 }
-
+if($_SESSION['jatekospontja'] == $_SESSION['maxpont'])
+{
+    header("Location: gamemode_select.php?nyert");
+}
+elseif($_SESSION['botpontja'] == $_SESSION['maxpont']){
+    header("Location: gamemode_select.php?vesztett");
+}
 
 ?>
 

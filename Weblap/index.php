@@ -44,21 +44,30 @@
         </table>
     </form>
 
-    <?php echo "<br>"?>
+   
 
-    <form action="logout.php" method = "POST">
-        <input type="hidden" name="id"/>
-        <button type="submit">Kijelentkezés</button>
-    </form>
-        
-    
-        
-    
-    
-        <form action="delete_profil.php" method="POST">
-        <input type="hidden" name="id" value=""/> 
-        <button type="submit">Törlés</button>
-    </form>
+
+
+    <table>
+        <tr>
+            <td>
+                <form action="logout.php" method = "POST">
+                    <input type="hidden" name="id"/>
+                    <button type="submit">Kijelentkezés</button>
+                </form>
+            </td>
+            <td>
+                </form>
+                    <form action="delete_profil.php" method="POST">
+                    <input type="hidden" name="id" value=""/> 
+                    <button type="submit">Profil Törlése</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+
+
 
     <?php echo "<br>"?>
 

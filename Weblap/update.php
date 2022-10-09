@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adatmódosító</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
 <?php
     session_start();
     require 'mydbms.php';
@@ -28,3 +36,5 @@
         echo "<a href='register_form.php'>Vissza a regisztrációhoz</a>";
     }
 ?>
+</body>
+</html>

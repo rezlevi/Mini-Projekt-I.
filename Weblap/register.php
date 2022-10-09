@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regisztráció állása</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
 <?php
     if( isset($_POST['username'])
      && isset($_POST['email'])
@@ -42,3 +50,5 @@
         echo "<a href='register_form.php'>Vissza a regisztrációhoz</a>";
     }
 ?>
+</body>
+</html>

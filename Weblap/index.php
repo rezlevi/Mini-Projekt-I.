@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Főoldal</title>
+    <link rel="stylesheet" href="design.css">
 </head>
 <body>
     <?php
@@ -68,23 +69,23 @@
     <?php echo "<br>"?>
 
 <h3>Itt láthatod az eddigi játékaid statisztikáit:</h3>
-<table>
+<table style="background-color: white; border: 1px solid;">
     <tr>
-        <th>Összes</th>
-        <th>Nyert</th>
-        <th>Vesztett</th>
-        <th>Döntetlen</th>
-        <th>Győzelmi százalék</th>
+        <th class="t">Összes</th>
+        <th class="t">Nyert</th>
+        <th class="t">Vesztett</th>
+        <th class="t">Döntetlen</th>
+        <th class="t">Győzelmi százalék</th>
     </tr>
     <tr>
-        <td><?= $record2[2] ?></td>
-        <td><?= $record2[3] ?></td>
-        <td><?= $record2[4] ?></td>
-        <td><?= $record2[5] ?></td>
-        <td><?= $record2[6] ?></td>
+        <td class="t"><?= $record2[2] ?></td>
+        <td class="t"><?= $record2[3] ?></td>
+        <td class="t"><?= $record2[4] ?></td>
+        <td class="t"><?= $record2[5] ?></td>
+        <td class="t"><?= $record2[6] ?></td>
     </tr>
 </table>
-    
+<?php echo "<br>"?>
 <form action="gamemode_select.php">
     <input type="submit" value="Irány játszani" />
 </form>

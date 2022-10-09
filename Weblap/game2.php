@@ -152,6 +152,7 @@ elseif($_SESSION['botpontja'] == $_SESSION['maxpont']){
         <a>Kör kimenetele: <?php echo($eredmeny)?></a>
 
     </table>
+    
 
 <table>
     <tr>
@@ -179,8 +180,9 @@ elseif($_SESSION['botpontja'] == $_SESSION['maxpont']){
     </tr>
 </table>
 
-<input type="submit" name="index" value="Vissza a főoldalra!">
-
+<form action="index.php">
+    <input type="submit" value="Vissza" />
+    </form>
 
 </body>
 </html>

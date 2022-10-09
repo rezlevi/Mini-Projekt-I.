@@ -44,6 +44,10 @@ if(isset($_POST["jatekmod_gomb"])){
         </tr>
 </form>
 
+<form action="index.php">
+    <input type="submit" value="Vissza" />
+    </form>
+
 </body>
 </html>
 

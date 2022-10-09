@@ -7,6 +7,16 @@
     <title>Admin panel</title>
 </head>
 <body>
-    
+    <h1>Panel</h1>
+    <table>
+        <tr>
+            <td>
+                </form>
+                    <form action="kereses_form.php" method="POST">
+                    <button type="submit">Keresés!</button>
+                </form>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>

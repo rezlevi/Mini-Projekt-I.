@@ -36,3 +36,12 @@ Hétfőre megbeszélni valók:
   Holnap megkérdezni hogy legyen-e admin
   Lesz best of 1-2-3
   Kijelentkezés gomb a statisztikáknál lesz
+  
+  10_09 - Utolsó simítások:
+    CSS megcsinálása
+    Elemek elhelyezése
+    Oldalakról való átjárás ellenőrzése
+    Admin felhasználó regisztrálása
+    Admin features?
+    Vendégfelhasználó játékmenete és navigációja
+    

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Regisztráció</title>
+    <link rel="stylesheet" href="design.css">
 
 </head>
 <body>

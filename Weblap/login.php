@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adatmódosítás</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
 <?php
     if(isset($_POST['username']) && isset($_POST['jelszo']))
     {
@@ -22,6 +30,6 @@
         echo "Adja meg az összes mezőnek az értékét!";
         echo "<a href='login_form.php'>Vissza a bejelentkezéshez</a>";
     }
-
-
 ?>
+</body>
+</html>

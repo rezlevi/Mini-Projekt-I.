@@ -45,19 +45,54 @@ if($a == 3){
     $valasztas_bot = "olló";
 }
 
+require 'mydbms.php';
+$query = "SELECT * FROM statistics WHERE user_id=".$_SESSION['id'];
+$result = mysqli_query($con, $query);
+$record = mysqli_fetch_all($result);
+$alls=$record[0][2];
+$won = $record[0][3];
+$lost = $record[0][4];
+$draw = $record[0][5];
 
 $eredmeny = null;
 if(($b-$a)== 0) {
     $eredmeny = "Döntetlen!";
     $_SESSION['dontetlen']++;
+    $alls++;
+    $draw++;
+    $percentage = $won/$alls;
+    $query1 = "UPDATE statistics SET alls =$alls";
+    $query2 = "UPDATE statistics SET draw =$draw";
+    $query3 = "UPDATE statistics SET percentage =$percentage";
+    $result1 = mysqli_query($con, $query1);
+    $result2 = mysqli_query($con, $query2);
+    $result3 = mysqli_query($con, $query3);
 }
 if(($b == 1 && $a == 3) || ($b == 2 && $a == 1)  || ($b == 3 && $a == 2) ) {
     $eredmeny = "A játékos nyert!";
     $_SESSION['jatekospontja']++;
+    $alls++;
+    $won++;
+    $percentage = $won/$alls;
+    $query1 = "UPDATE statistics SET alls =$alls";
+    $query2 = "UPDATE statistics SET won =$won";
+    $query3 = "UPDATE statistics SET percentage =$percentage";
+    $result1 = mysqli_query($con, $query1);
+    $result2 = mysqli_query($con, $query2);
+    $result3 = mysqli_query($con, $query3);
 }
 if(($a == 1 && $b == 3) || ($a == 2 && $b == 1)  || ($a == 3 && $b == 2) ) {
     $eredmeny = "A gép nyert!";
     $_SESSION['botpontja']++;
+    $alls++;
+    $lost++;
+    $percentage = $won/$alls;
+    $query1 = "UPDATE statistics SET alls =$alls";
+    $query2 = "UPDATE statistics SET lost =$lost";
+    $query3 = "UPDATE statistics SET percentage =$percentage";
+    $result1 = mysqli_query($con, $query1);
+    $result2 = mysqli_query($con, $query2);
+    $result3 = mysqli_query($con, $query3);
 }
 if($_SESSION['jatekospontja'] == $_SESSION['maxpont'])
 {

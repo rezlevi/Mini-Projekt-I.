@@ -1,10 +1,6 @@
-
-
-
-
-
 <?php
-    $nev = 0;
+    $fnev = "email";
+    $email = "email";
 
 
     if(isset($_POST['nev']))
@@ -16,9 +12,17 @@
         $result = mysqli_query($con, $query);
         $record = mysqli_fetch_all($result);
         
-        var_dump($record[2]);
-        $nev = $record[1];
         
+        $fnev = $record[1];
+        $email = $record[2];
+        
+        echo "Felhasználóneve: $fnev";
+
+        echo "<br>";
+
+        echo "E-mail címe: $email";
+
+        echo "<br>";
         
         if(count($record) == 0) {
             echo "A megadott keresési adat helytelen, próbálja újra!";

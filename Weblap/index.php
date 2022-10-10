@@ -51,6 +51,13 @@
                         <button type="submit">Profil Törlése</button>
                     </form>
                 </td>
+                <td>
+                    </form>
+                        <form action="admin_e.php" method="POST">
+                        <input type="hidden" name="id" value=""/> 
+                        <button type="submit">Admin vagyok!</button>
+                    </form>
+                </td>
             </tr>
         </table>
     </form>

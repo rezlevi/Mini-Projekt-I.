@@ -3,10 +3,10 @@
 
 | Vizsgálat | Tesztelés időpontja | Elvárás | Eredmény | Hibák |
 | :---: | --- | --- | --- | --- |
-| Adatbázis | 2022.10.04.. | Adatbázis működés ellenőrzése. Létrejöjjön a statisztika tábla és a felhasználók tábla is. Regisztrációkor a felhaszónak mindkettő táblában jöjjön létre rekordja. | A táblák az oldal által küldött adatokat sikeresen el tudja tárolni. | Nem találtam hibát. |
-| Regisztráció | 2022.10.04.. | A regisztrált felhasználó bekerül az adatbázisba. | Sikeresen megtörtént a regisztráció. | Nem találtam hibát. |
-| Bejelentkezés | 2022.10.04.. | A bejelentkezés oldalon az adatbázisban már szereplő felhasználók be tudjanak lépni. | A fiókkal sikerült belépni a weboldalra. | Nem találtam hibát. |
-| Autentikáció | 2022.10.04.. | Csak felhasználói fiók azonosítása után tudjunk hozzáférni a rendszerhez bizonyos funkcióihoz. | Bejelentkezés nélkül nem tudunk adatokat rögzíteni az adatbázisba. | Nem találtam hibát. |
+| Adatbázis | 2022.10.04. | Adatbázis működés ellenőrzése. Létrejöjjön a statisztika tábla és a felhasználók tábla is. Regisztrációkor a felhaszónak mindkettő táblában jöjjön létre rekordja. | A táblák az oldal által küldött adatokat sikeresen el tudja tárolni. | Nem találtam hibát. |
+| Regisztráció | 2022.10.04. | A regisztrált felhasználó bekerül az adatbázisba. | Sikeresen megtörtént a regisztráció. | Nem találtam hibát. |
+| Bejelentkezés | 2022.10.04. | A bejelentkezés oldalon az adatbázisban már szereplő felhasználók be tudjanak lépni. | A fiókkal sikerült belépni a weboldalra. | Nem találtam hibát. |
+| Autentikáció | 2022.10.04. | Csak felhasználói fiók azonosítása után tudjunk hozzáférni a rendszerhez bizonyos funkcióihoz. | Bejelentkezés nélkül nem tudunk adatokat rögzíteni az adatbázisba. | Nem találtam hibát. |
 
 Az Alfa tesztelés során a vizsgált elemek mind hibátlanul működtek, az adatbázisban eltárolandó elemek tisztázása után a munka gördülékenyen folyt, mindenféle fennakadások nélkül.
 
